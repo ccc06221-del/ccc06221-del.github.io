@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Favicon: a small cinnabar seal with 至 drawn in strokes (no font, so it
+       renders the same everywhere a favicon shows). -->
+  <rect width="32" height="32" rx="5" fill="#b5362a"/>
+  <rect x="3" y="3" width="26" height="26" rx="2" fill="none" stroke="#f5efe2" stroke-width="1.5"/>
+  <path d="M9 9 H23 M15 9 L11 15 H21 M19 12.5 L21 15.5 M9 19.5 H23 M16 15.5 V25 M8 25 H24" fill="none" stroke="#f5efe2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

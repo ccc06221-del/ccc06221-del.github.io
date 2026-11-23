@@ -1,0 +1,114 @@
+/* The 30-second version: plain on purpose. No scripts, no art. */
+
+:root {
+  --paper: #f5efe2;
+  --ink: #1f1a16;
+  --ink-soft: #57493e;
+  --gold-soft: #d8c49b;
+  --cinnabar: #b5362a;
+  --serif: "EB Garamond", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --serif-tc: "Noto Serif TC", "Songti TC", "PMingLiU", "MingLiU", serif;
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
+[lang|="zh"] {
+  font-family: var(--serif-tc);
+}
+
+.brief {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: clamp(2rem, 8vw, 5rem) 1.25rem 4rem;
+}
+
+h1 {
+  margin: 0 0 .5rem;
+  font-size: clamp(2.1rem, 6vw, 2.8rem);
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+h1 span {
+  margin-left: .2em;
+  font-size: .8em;
+  font-weight: 600;
+  letter-spacing: .08em;
+}
+
+h2 {
+  margin: 2.5rem 0 .75rem;
+  color: var(--ink-soft);
+  font-size: .85rem;
+  font-weight: 500;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+.line {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.facts {
+  margin: 0;
+  padding-left: 1.4rem;
+}
+
+.facts li {
+  margin-bottom: .7rem;
+  padding-left: .25rem;
+}
+
+.contact {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contact li {
+  padding: .3rem 0;
+  border-bottom: 1px solid var(--gold-soft);
+}
+
+a {
+  color: inherit;
+  text-underline-offset: .18em;
+}
+
+a[href]:hover {
+  color: var(--cinnabar);
+}
+
+:focus-visible {
+  outline: 2px solid var(--cinnabar);
+  outline-offset: 3px;
+}
+
+.todo {
+  padding: 0 .3em;
+  border: 1px dashed var(--cinnabar);
+  background: none;
+  color: var(--cinnabar);
+  font-size: .8em;
+  white-space: nowrap;
+}
+
+.back {
+  margin-top: 2.5rem;
+}
+
+/* A quiet companion to the handscroll's ink and parchment. */
+body { background: #e7d6bb; }
+.brief { background: #f8edda; border: 1px solid #aa8660; border-top: .5rem solid #733c32; box-shadow: 0 1rem 4rem rgba(47, 27, 23, .14); }
+h1 { color: #402725; }
+h2 { color: #783d32; border-bottom: 1px solid #cbb28a; padding-bottom: .4rem; }
+.facts li::marker { color: #8a4b37; }
